@@ -1,0 +1,1 @@
+覆盖equals时总要覆盖hashCode；否则会导致该类无法和基于散列的集合一起正常工作。如HashMap

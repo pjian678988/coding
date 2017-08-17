@@ -1,0 +1,1 @@
+当构造方法或静态工厂方法中参数过多的时候，考虑使用建造者模式吧。它比telescoping constructor模式更易读，同时也比javabean模式更安全。
