@@ -9,6 +9,7 @@
 	<description />
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.7</java.version>
 		<springframework.version>3.2.3.RELEASE</springframework.version>
 	</properties>
 	<dependencies>
@@ -177,12 +178,15 @@
 						</lifecycleMappingMetadata>
 					</configuration>
 				</plugin>
-			 	<plugin>
-			 		<artifactId>maven-war-plugin</artifactId>
-			 		<configuration>
-			 			<version>3.0</version>
-			 		</configuration>
-			 	</plugin>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.3.2</version>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+						<encoding>${project.build.sourceEncoding}</encoding>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
